@@ -1,0 +1,41 @@
+.linkHover {
+    
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-text-fill-color: white;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+  }
+  
+  .linkHover:before {
+    content: '';
+    background: #fdfefe;
+    display: block;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .linkHover:hover {
+   background-position: 0;
+  }
+  
+  .linkHover:hover::before{
+    width: 100%;
+  }
+  
+.linkHover:focus {
+  
+  border: 2px solid white;
+}
+
+
+.active{
+  border: 2px solid white;
+}
