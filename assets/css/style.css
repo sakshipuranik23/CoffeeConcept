@@ -108,7 +108,7 @@
 /* media queries start */
 
 /* Hide all sections by default */
-#features_desktop, #features_tabMobile , #cta_desktop , #cta_tabMobile,#menuHeaderimg {
+#features_desktop, #features_tabMobile , #cta_desktop , #cta_tabMobile,#menuHeaderimg, #scroll-down {
     display: none;
 }
 
@@ -127,6 +127,9 @@
         font-size: 330% !important;
     }
     #menuHeaderimg {
+        display: block;
+    }
+    #scroll-down  {
         display: block;
     }
     
@@ -170,7 +173,9 @@
         display: block;
         margin-top: 20%;
     }
-    
+    #scroll-down  {
+        display: none;
+    }
 }
 
 /* Mobile view */
@@ -203,5 +208,7 @@
     #menuHeaderimg{
         display: none;
     }
-    
+    #scroll-down  {
+        display: none;
+    }
 }
